@@ -410,7 +410,6 @@ function scatterplotUpdate(rawdata, x, y, c){
      .duration(500)
      .style("fill", function(d, i) {
        if(c == "mainRole"){
-         console.log(roleTable.indexOf(d.mainRole));
          return rcolor(roleTable.indexOf(d.mainRole));
        }
        else

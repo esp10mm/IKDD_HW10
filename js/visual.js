@@ -101,7 +101,7 @@ function matchDuration(rawdata, basetime, interval){
      })
      .duration(300)
      .attr("x", function(d, i) {
-       return xPos[i];
+       return xPos[i] - this.getBBox().width/2;;
      })
      .attr("y", function(d){
        return yScale(d) + margin.top - 1;

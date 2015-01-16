@@ -5,7 +5,7 @@ import json
 
 client = pymongo.MongoClient('localhost', 27017)
 db = client.League
-matches = db.match_copy.find()
+matches = db.match.find()
 
 with open('data/champion.json') as f:
     data = f.read()
